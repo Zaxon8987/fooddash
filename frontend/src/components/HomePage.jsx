@@ -76,7 +76,7 @@ export default function HomePage({ onRestaurantClick }) {
             <div className="h-6 w-px bg-gray-200" />
             {cuisines.slice(0, 8).map((c, i) => (
               <motion.button key={c} onClick={() => handleSearch(c)} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}
-                className="px-3 py-1.5 text-sm text-gray-600 hover:bg-gray-100 rounded-full transition whitespace-nowrap">
+                className="px-4 py-2 text-sm text-gray-600 hover:text-primary bg-gray-100 hover:bg-orange-100 rounded-full transition-all whitespace-nowrap font-medium">
                 {c}
               </motion.button>
             ))}

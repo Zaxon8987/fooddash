@@ -34,7 +34,7 @@ export default function Navbar({ onCartClick, onAuthClick, onNavigate, currentVi
             <span className="text-xl font-bold gradient-text">FoodDash</span>
           </motion.button>
 
-          <div className="hidden md:flex items-center gap-1">
+          <div className="hidden md:flex items-center gap-6">
             {navLinks.map(link => (
               <motion.button key={link.view} onClick={() => onNavigate?.(link.view)}
                 className={`relative px-4 py-2 rounded-xl text-sm font-medium transition-colors ${currentView === link.view ? 'text-primary' : 'text-gray-600 hover:text-gray-800 hover:bg-gray-100'}`}
